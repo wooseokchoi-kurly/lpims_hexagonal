@@ -1,0 +1,8 @@
+dependencies {
+    implementation project(":domain")
+    implementation 'org.springframework.data:spring-data-jdbc'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}

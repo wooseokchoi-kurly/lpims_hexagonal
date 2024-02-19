@@ -1,11 +1,5 @@
 rootProject.name = 'lpims'
 
-//domains
-include('domains')
-include('domains:lpims-mysql-domain')
-include('domains:lpims-redis-domain')
-
-//apis
-include('apis')
-include('apis:lpims-internal-api')
-include('apis:lpims-external-api')
+include(':domain')
+include(':application')
+include(':infrastructure')
